@@ -291,8 +291,10 @@
         }
 
         if (!pe) {
-          event.preventDefault();
-          event.stopPropagation();
+          if (event.cancelable) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
         }
         this.scrollTo(dist, 0);
 

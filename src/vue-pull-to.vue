@@ -398,7 +398,7 @@
   };
 </script>
 
-<style scoped>
+<style>
   .vue-pull-to-wrapper,
   .vue-pull-to-wrapper > .scroll-container {
     padding: 0;
